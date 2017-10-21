@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RekomandoUshqimin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza" translatesAutoresizingMaskIntoConstraints="NO" id="JnS-uc-Ui2">
+                                <rect key="frame" x="314" y="55" width="140" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="ZDA-6x-AX1"/>
+                                    <constraint firstAttribute="width" constant="140" id="gRd-gZ-6ew"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per sot ju preferojme nje pizza qe kushton 2.5 Euro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJQ-Ar-T1W">
+                                <rect key="frame" x="5" y="255" width="758" height="563.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UlD-zA-ef6">
+                                <rect key="frame" x="284" y="859" width="200" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.13124972751830288" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Bis-ny-SIZ"/>
+                                    <constraint firstAttribute="width" constant="200" id="dIL-SY-fTg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="Sugjero Ushqimin">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="sugjeroUshqim:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cHQ-TF-frm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JnS-uc-Ui2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4mL-hm-i9z"/>
+                            <constraint firstItem="hJQ-Ar-T1W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aos-cM-4Ae"/>
+                            <constraint firstAttribute="trailing" secondItem="hJQ-Ar-T1W" secondAttribute="trailing" constant="5" id="BZH-JE-cjb"/>
+                            <constraint firstItem="UlD-zA-ef6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gpz-60-ogh"/>
+                            <constraint firstItem="hJQ-Ar-T1W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="5" id="Ogu-cs-zbl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UlD-zA-ef6" secondAttribute="bottom" constant="95" id="XDF-ZB-0fL"/>
+                            <constraint firstItem="hJQ-Ar-T1W" firstAttribute="top" secondItem="JnS-uc-Ui2" secondAttribute="bottom" constant="20" id="bjT-zq-ksW"/>
+                            <constraint firstItem="UlD-zA-ef6" firstAttribute="top" secondItem="hJQ-Ar-T1W" secondAttribute="bottom" constant="40" id="ge8-bK-9m8"/>
+                            <constraint firstItem="JnS-uc-Ui2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="kKM-7k-c0b"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="fotoja" destination="JnS-uc-Ui2" id="xEf-hr-aBF"/>
+                        <outlet property="teksti" destination="hJQ-Ar-T1W" id="V25-ec-Ugq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="117.39130434782609"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pizza" width="124" height="128"/>
+    </resources>
+</document>
